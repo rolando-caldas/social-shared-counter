@@ -1,0 +1,9 @@
+App\Domain\ValueObject\Url:
+  type: embeddable
+  fields:
+    url:
+      column: url
+      type: string
+      length: 255
+      options:
+        default: ''

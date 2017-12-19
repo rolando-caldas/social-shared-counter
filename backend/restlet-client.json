@@ -1,0 +1,279 @@
+{
+  "front-version": "2.13.1",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Project",
+      "id": "0ca15971-a7a4-4c1e-981c-5de3e9df36ec",
+      "lastModified": "2017-12-19T14:33:08.044+01:00",
+      "name": "social-share"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"uuid\": \"9b257641-7bd3-4c57-b539-5d917dbec8b4\",\n  \"url\": \"https://www.facebook.com\"\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8081",
+        "path": "/shares"
+      },
+      "id": "1bbcacf0-f563-4d45-a9d8-6b99641a2b0e",
+      "lastModified": "2017-12-19T14:32:39.575+01:00",
+      "name": "Add a share",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "0ca15971-a7a4-4c1e-981c-5de3e9df36ec"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8081",
+        "path": "/shares/9b257641-7bd3-4c57-b539-5d917dbec8b4"
+      },
+      "id": "af0a0796-4832-4382-b0ca-e21b1657a04d",
+      "lastModified": "2017-12-19T14:32:54.377+01:00",
+      "name": "Get a share",
+      "headers": [],
+      "metaInfo": {},
+      "parentId": "0ca15971-a7a4-4c1e-981c-5de3e9df36ec"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8081",
+        "path": "/shares"
+      },
+      "id": "55398217-0e45-4cdc-8ca4-4bdb233dafcc",
+      "lastModified": "2017-12-19T10:57:25.384+01:00",
+      "name": "Get all shares",
+      "headers": [],
+      "metaInfo": {},
+      "parentId": "0ca15971-a7a4-4c1e-981c-5de3e9df36ec"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.5",
+        "name": "DELETE"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8081",
+        "path": "/shares/9b257641-7bd3-4c57-b539-5d917dbec8b4"
+      },
+      "id": "1537322c-3623-4929-855a-e6a991dad04c",
+      "lastModified": "2017-12-19T14:33:01.069+01:00",
+      "name": "Remove a share",
+      "headers": [],
+      "metaInfo": {},
+      "parentId": "0ca15971-a7a4-4c1e-981c-5de3e9df36ec"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8081",
+        "path": "/generate/uuid"
+      },
+      "id": "047585db-c61c-4fc0-9847-36b000bf5fca",
+      "lastModified": "2017-12-19T10:55:49.204+01:00",
+      "name": "Request UUID",
+      "headers": [],
+      "metaInfo": {},
+      "parentId": "0ca15971-a7a4-4c1e-981c-5de3e9df36ec"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.4",
+        "name": "PUT"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8081",
+        "path": "/shares/9b257641-7bd3-4c57-b539-5d917dbec8b4"
+      },
+      "id": "88cf027b-21b5-4ce4-8f43-2c0599eea990",
+      "lastModified": "2017-12-19T14:33:08.045+01:00",
+      "name": "Update a share",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "0ca15971-a7a4-4c1e-981c-5de3e9df36ec"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.4",
+        "name": "PUT"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8081",
+        "path": "/shares"
+      },
+      "id": "f26144f9-73cf-4132-bd47-a43a128d16e9",
+      "lastModified": "2017-12-19T13:54:27.676+01:00",
+      "name": "Update all shares",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "0ca15971-a7a4-4c1e-981c-5de3e9df36ec"
+    }
+  ]
+}

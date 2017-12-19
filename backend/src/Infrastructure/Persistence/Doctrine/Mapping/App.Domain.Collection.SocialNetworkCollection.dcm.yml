@@ -1,0 +1,6 @@
+App\Domain\Collection\SocialNetworkCollection:
+  type: embeddable
+  fields:
+    data:
+      column: socialNetwork
+      type: object

@@ -1,0 +1,7 @@
+CREATE TABLE share (
+  id CHAR(36) NOT NULL,
+  lastUpdated DATETIME DEFAULT NULL,
+  url VARCHAR(255) DEFAULT '' NOT NULL,
+  socialNetwork CLOB NOT NULL,
+  PRIMARY KEY(id)
+);

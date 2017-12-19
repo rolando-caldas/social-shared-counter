@@ -1,0 +1,29 @@
+{
+    "name": "rolando-caldas/social-shared-counter",
+    "type": "project",
+    "require": {
+        "php": ">=7.1.0",
+        "doctrine/orm": "^2.5",
+        "silex/silex": "^2.2",
+        "ramsey/uuid": "^3.6",
+        "symfony/yaml": "^3.2",
+        "ramsey/collection": "^0.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.3",
+        "phpmd/phpmd" : "@stable"
+    },
+    "license": "GNU/GPL 3",
+    "authors": [
+        {
+            "name": "rolando.caldas",
+            "email": "rolando.caldas@gmail.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4" : {
+            "App\\" : "src/",
+            "App\\Test\\" : "test/"
+        }
+    }
+}

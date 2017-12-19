@@ -1,0 +1,20 @@
+App\Domain\Entity\Share\Share:
+  type: entity
+  table: share
+  repositoryClass: App\Infrastructure\Domain\Entity\Share\DoctrineShareRepository
+  id:
+    id:
+      column: id
+      type: ShareId
+  fields:
+    lastUpdated:
+      column: lastUpdated
+      type: datetime_immutable
+      nullable: true
+  embedded:
+    url:
+      class: App\Domain\ValueObject\Url
+      columnPrefix: false
+    socialNetwork:
+      class: App\Domain\Collection\SocialNetworkCollection
+      columnPrefix: false
